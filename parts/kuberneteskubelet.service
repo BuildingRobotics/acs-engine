@@ -45,6 +45,7 @@ ExecStart=/usr/bin/docker run \
         --azure-container-registry-config=/etc/kubernetes/azure.json \
         --hairpin-mode=promiscuous-bridge \
         --network-plugin=${KUBELET_NETWORK_PLUGIN} \
+        --non-masquerade-cidr=${KUBELET_NON_MASQUERADE_CIDR} \
         --v=2
 
 [Install]

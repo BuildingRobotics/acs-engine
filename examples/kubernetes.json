@@ -8,14 +8,22 @@
     "masterProfile": {
       "count": 1,
       "dnsPrefix": "",
-      "vmSize": "Standard_D2_v2"
+      "vmSize": "Standard_D2_v2",
+      "vnetCidr": "",
+      "vnetSubnetId": "",
+      "firstConsecutiveStaticIP": "",
+      "kubeNonMasqueradeCidr": ""
     },
     "agentPoolProfiles": [
       {
         "name": "agentpool1",
         "count": 3,
         "vmSize": "Standard_D2_v2",
-        "availabilityProfile": "AvailabilitySet"
+        "vnetCidr": "",
+        "vnetSubnetId": "",
+        "firstConsecutiveStaticIP": "",
+        "availabilityProfile": "AvailabilitySet",
+        "kubeNonMasqueradeCidr": ""
       }
     ],
     "linuxProfile": {
