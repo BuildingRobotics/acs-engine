@@ -117,7 +117,7 @@ func createCertificate(commonName string, caCertificate *x509.Certificate, caPri
 		template.KeyUsage |= x509.KeyUsageCertSign
 		template.IsCA = isCA
 	} else if isServer {
-		extraIPs = append(extraIPs, net.ParseIP("10.252.0.1"))
+		extraIPs = append(extraIPs, net.ParseIP("10.245.0.1"))
 
 		template.DNSNames = extraFQDNs
 		template.IPAddresses = extraIPs
