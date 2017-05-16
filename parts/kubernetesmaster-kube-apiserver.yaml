@@ -30,6 +30,8 @@ spec:
         - "--client-ca-file=/etc/kubernetes/certs/ca.crt"
         - "--service-account-key-file=/etc/kubernetes/certs/apiserver.key"
         - "--storage-backend=etcd2"
+        - "--audit-log-path=/var/log/audit.log"
+        - "--audit-log-maxage=10"
         - "--v=4"
       volumeMounts:
         - name: "etc-kubernetes"

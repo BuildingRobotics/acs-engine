@@ -85,6 +85,7 @@
 {{end}}
     "kubeDnsServiceIp": "10.245.0.10",
     "kubeServiceCidr": "10.245.0.0/16",
+    "kubeNonMasqueradeCidr": "10.240.0.0/13",
 {{if HasLinuxAgents}}
     "registerSchedulable": "false",
 {{else}}
