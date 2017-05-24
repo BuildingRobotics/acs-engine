@@ -319,7 +319,6 @@ ensureDocker
 configNetworkPolicy
 ensureKubelet
 extractKubectl
-ensureJournal
 
 # master only 
 if [[ ! -z "${APISERVER_PRIVATE_KEY}" ]]; then
